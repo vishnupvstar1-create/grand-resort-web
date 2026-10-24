@@ -145,7 +145,7 @@ export default function BookingForm() {
   }
 
   return (
-    <div className="bg-white p-6 rounded-2xl shadow-xl max-w-md w-full mx-auto border border-gray-100">
+    <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-xl max-w-md w-full mx-auto border border-gray-100">
       <h3 className="text-2xl font-bold text-gray-900 mb-6">Book Your Stay</h3>
       
       {status.message && (
@@ -213,8 +213,8 @@ export default function BookingForm() {
           )}
         </select>
 
-        <div className="flex gap-4">
-          <div className="w-1/2">
+       <div className="flex flex-col sm:flex-row gap-4">
+          <div className="w-full sm:w-1/2">
             <label className="block text-xs text-gray-500 mb-1">Check-in *</label>
             <input 
               required 
@@ -232,7 +232,7 @@ export default function BookingForm() {
               }} 
             />
           </div>
-          <div className="w-1/2">
+          <div className="w-full sm:w-1/2">
             <label className="block text-xs text-gray-500 mb-1">Check-out *</label>
             <input 
               required 

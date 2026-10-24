@@ -77,15 +77,17 @@ export default function Home() {
       </nav>
 
       
-      <section className="bg-slate-900 text-white py-20 px-4">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h1 className="text-5xl font-bold mb-6">Experience Luxury at Grand Resort</h1>
-            <p className="text-xl text-gray-300 mb-8">
+    <section className="bg-slate-900 text-white py-12 md:py-20 px-4 min-h-[calc(100vh-73px)] flex items-center">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 md:gap-12 items-center w-full">
+          <div className="text-center md:text-left mt-6 md:mt-0">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight">
+              Experience Luxury at Grand Resort
+            </h1>
+            <p className="text-lg md:text-xl text-gray-300 mb-6 md:mb-8 px-2 md:px-0">
               Escape to paradise. Enjoy world-class amenities, stunning views, and unforgettable service.
             </p>
           </div>
-          <div>
+          <div className="w-full max-w-md mx-auto md:max-w-full pb-8 md:pb-0">
             <BookingForm />
           </div>
         </div>

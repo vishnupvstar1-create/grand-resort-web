@@ -17,7 +17,11 @@ export const metadata: Metadata = {
   description: "Official booking portal and admin management system for Grand Resort.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html
       lang="en"
